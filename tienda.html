@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda - FiloNow</title>
+    <title>FiloNow - Tienda</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="tienda.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="componentes.css">
+    <link rel="stylesheet" href="./CSS/tienda.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/componentes.css">
 
 </head>
+
 <body>
     <header>
         <div class="navBar">
             <div class="sup-menu">
-              <a class="abrir-menu" id="abrir">&#8801</a>
+              <a class="abrir-menu" id="abrir">&#8801;</a>
                 <a href="index.html"><img src="./logo/LOGOTIPO_VR1.png" alt="FiloNow"  class="logo"></a> 
                 <div class="call-action">
                     <div class="mi-cuenta-boton boton-cta">
-                      <a href="#"><img src="./botones/mi-cuenta-active.png" alt="Botón Cuenta" class="icono-cuenta">
+                      <a href="#"><img src="./botones/mi-cuenta-active.png" alt="Botón Cuenta" class="icono-cuenta"></a>
                           <a href="#">
                               <h2 class="mi-cuenta">Mi <br>Cuenta</h2>
-                          </a></a>                        
+                          </a>                        
                     </div>
                     <div class="carrito boton-cta">
                         <a href="#"><img src="./botones/carrito-active.png" alt="Botón carrito" class="icono-carrito"></a>
@@ -31,14 +32,14 @@
             </div>
           <div class="buscador" id="buscador-resp">
                 <form role="search" onsubmit="return false;">
-                    <input type="search" id="search-input" name="q" placeholder="Busca por autor, título, género, ISBN ..." aria-label="Buscador">
+                    <input type="search" id="search-input2" name="q" placeholder="Busca por autor, título, género, ISBN ..." aria-label="Buscador">
                     <button type="submit" class="boton-buscador">
-                        <img src="./botones/buscador.png" alt="botón buscador" width="28px">
+                        <img src="./botones/buscador.png" alt="botón buscador" width="28">
                     </button>
                 </form>
             </div> 
             <nav class="menu" id="menu">
-              <a class="cerrar-menu" id="cerrar">&#215</a>
+              <a class="cerrar-menu" id="cerrar">&#215;</a>
                 <a href="nosotros.html">NOSOTROS</a>
                 <div class="linea-vertical"></div>
                 <a href="./tienda.html">TIENDA</a>
@@ -48,9 +49,9 @@
                 <a href="#">FILO<span class="menu-light-font">QUIZZ</span></a>
                 <div class="buscador">
                     <form role="search" onsubmit="return false;">
-                        <input type="search" id="search-input" name="q" placeholder="Busca por autor, título, género, ISBN ..." aria-label="Buscador">
+                        <input type="search" id="search-input1" name="q" placeholder="Busca por autor, título, género, ISBN ..." aria-label="Buscador">
                         <button type="submit" class="boton-buscador">
-                            <img src="./botones/buscador.png" alt="botón buscador" width="40px">
+                            <img src="./botones/buscador.png" alt="botón buscador" width="40">
                         </button>
                     </form>
                 </div>
@@ -58,16 +59,17 @@
             <div class="b-avanzada">
                 <a href="#">Búsqueda avanzada</a>
             </div>
-
+<!-- BREADCRUMBS -->
             <div class="breadcrumbs">
                 <ul>
-                    <a href="index.html"><li>Home</li></a>
-                    <a href="tienda.css"><li>Tienda</li></a>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
                 </ul>
             </div>
         </div>       
     </header>
 
+    <!-- NOVEDADES TIENDA GRID-->
     <section class="novedades-tienda">
         <div class="titulo-intro-filo-home">
             <img src="./logo/LOGOTIPO_VR10.png" alt="logo FiloNow" class="imagen-titulo">
@@ -77,6 +79,7 @@
             </div>
         </div>
         
+        <!-- OPCIOENS DE VISUALIZACIÓN -->
         <div class="opciones-visualizacion">
             <div class="visualizacion1">
                 <a href="#"></a>
@@ -91,6 +94,7 @@
             </div>
         </div>
         
+        <!-- GRID PRINCIPAL NOVEDADES TIENDA -->
         <div class="posicion-grid-novedades">
             <div class="grid-novedades">
                 <div class="centrar-item">
@@ -142,10 +146,10 @@
                     <div class="centrar-info-novedades">
                         <h1>FORMA PARTE DE LA COMUNIDAD</h1>
                         <ul>
-                            <a href="#"><li>Gana puntos y descuentos</li></a>
-                            <a href="#"><li>Participa en el foro</li></a>
-                            <a href="#"><li>Crea tus propios Quizzs</li></a>
-                            <a href="#"><li>Comparte conocimiento</li></a>
+                            <li><a href="#">Gana puntos y descuentos</a></li>
+                            <li><a href="#">Participa en el foro</a></li>
+                            <li><a href="#">Crea tus propios Quizzs</a></li>
+                            <li><a href="#">Comparte conocimiento</a></li>
                         </ul>
                         <a href="#" class="ver-mas-estandar"><img src="./botones/vermas.png" alt="boton para ver más sobre el evento"></a>
                     </div>                
@@ -158,6 +162,7 @@
         
     </section>
 
+    <!-- TIENDA PRINCIPAÑ -->
     <section class="tienda-principal">
 
         <div class="titulo-intro-filo-home">
@@ -168,58 +173,77 @@
         </div>
 
         <div class="contenedor-tienda-principal">
+            <!-- CATALOGO Y FILTROS MENU IZQUIERDA -->
             <aside class="opciones-tienda">
+
+                <!-- CATEGORÍAS -->
                 <div class="categorias-tienda">
-                    <h1>CATEGORÍAS</h1>
+                    <h3>CATEGORÍAS</h3>
                     <ul>
-                        <a href="#"><li>
+                        <li><a href="#">
                             <div class="seleccionado">
                                 <img src="./botones/icono-filtros.svg" alt="">
                                 <span>Filosofía contemporánea</span>
                             </div>
-                        </li></a>
-                        <a href="#"><li>Filosofía antigua</li></a>
-                        <a href="#"><li>Historia de la filosofía</li></a>
-                        <a href="#"><li>Ética y moral</li></a>
-                        <a href="#"><li>Lógica</li></a>
-                        <a href="#"><li>Diccionarios filosóficos</li></a>
-                        <a href="#"><li>Filosofía medieval</li></a>
+                        </a></li>
+                        <li><a href="#">Filosofía antigua</a></li>
+                        <li><a href="#">Historia de la filosofía</a></li>
+                        <li><a href="#">Ética y moral</a></li>
+                        <li><a href="#">Lógica</a></li>
+                        <li><a href="#">Diccionarios filosóficos</a></li>
+                        <li><a href="#">Filosofía medieval</a></li>
                     </ul>
                     <a href="#">Ver más</a>
                 </div>
 
+                <!-- FILTROS -->
                 <div class="filtros-tienda">
-                    <h1>FILTROS</h1>
+                    <h3>FILTROS</h3>
                     <ul>
-                        
-                        <div class="boton-filtro">
-                            <a href="#"><li>AUTOR</li></a>
-                            <img src="./botones/icono-filtros.svg" alt="">
-                        </div>
-                        <div class="boton-filtro">
-                            <a href="#"><li>PRECIO</li></a>
-                            <img src="./botones/icono-filtros.svg" alt="">
-                        </div>
-                        <div class="boton-filtro">
-                            <a href="#"><li>FORMATO</li></a>
-                            <img src="./botones/icono-filtros.svg" alt="">
-                        </div>
-                        <div class="boton-filtro">
-                            <a href="#"><li>IDIOMA</li></a>
-                            <img src="./botones/icono-filtros.svg" alt="">
-                        </div>
-                        <div class="boton-filtro">
-                            <a href="#"><li>EDITORIAL</li></a>
-                            <img src="./botones/icono-filtros.svg" alt="">
-                        </div>
-                        <div class="boton-filtro">
-                            <a href="#"><li>COLECCIÓN</li></a>
-                            <img src="./botones/icono-filtros.svg" alt="">
-                        </div>
+                        <li>
+                            <div class="boton-filtro">
+                                <a href="#">AUTOR</a>
+                                <img src="./botones/icono-filtros.svg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="boton-filtro">
+                                <a href="#">PRECIO</a>
+                                <img src="./botones/icono-filtros.svg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="boton-filtro">
+                                <a href="#">FORMATO</a>
+                                <img src="./botones/icono-filtros.svg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="boton-filtro">
+                                <a href="#">IDIOMA</a>
+                                <img src="./botones/icono-filtros.svg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="boton-filtro">
+                                <a href="#">EDITORIAL</a>
+                                <img src="./botones/icono-filtros.svg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="boton-filtro">
+                                <a href="#">COLECCIÓN</a>
+                                <img src="./botones/icono-filtros.svg" alt="">
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </aside>
+
+            <!-- GRID PRINCIPAL TIENDA -->
             <div class="contenedor-grid-tienda">
+
+                <!-- ENCABEZADO GRID PRINCIPAL TIENDA -->
                 <div class="sup-tienda">
                     <h1>Filosofía contemporánea</h1>
                     <div class="ordenar-por">
@@ -228,15 +252,15 @@
                             <a href="#">Fecha de lanzamiento</a>
                             <img src="./botones/icono-filtros.svg" alt="">
                         </div>
-                    </div>
-                    
+                    </div>                    
                 </div>
                     
+                <!-- GRID CONTENIDO TIENDA -->
                 <div class="grid">
-                    <div class="libros-home"  id="libros-grid-tienda">
-                        <div class="libro1-home" id="tamaño-contenido">
+                    <div class="libros-home libros-grid-tienda libros-grid-tienda">
+                        <div class="libro1-home">
                             <a href="#"><img src="./botones/like-active.png" alt="botón me gusta" class="me-gusta"></a>
-                            <div class="portada" id="portada-tienda">
+                            <div class="portada portada-tienda">
                                 <img src="./imagenes/portadas/libro1.jpg" alt="El nacimiento de la filosofía" class="portada-img portada-componente">
                             </div>
                             <div class="info-libro-tienda">
@@ -258,17 +282,17 @@
                             </div>
                             <div class="precio-carrito">
                                 <span>8,95€</span>
-                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito" id="carrito"></a>
+                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito"></a>
                             </div>
                             </div>
                         </div>
                     </div>
 
                     
-                    <div class="libros-home"  id="libros-grid-tienda">
-                        <div class="libro1-home" id="tamaño-contenido">
+                    <div class="libros-home libros-grid-tienda">
+                        <div class="libro1-home">
                             <a href="#"><img src="/botones/like-active.png" alt="botón me gusta" class="me-gusta"></a>
-                            <div class="portada" id="portada-tienda">
+                            <div class="portada portada-tienda">
                                 <img src="./imagenes/portadas/libro2.jpg" alt="El nacimiento de la filosofía" class="portada-img portada-componente">
                             </div>
                             <div class="info-libro-tienda">
@@ -290,16 +314,16 @@
                             </div>
                             <div class="precio-carrito">
                                 <span>8,95€</span>
-                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito" id="carrito"></a>
+                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito"></a>
                             </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="libros-home"  id="libros-grid-tienda">
-                        <div class="libro1-home" id="tamaño-contenido">
+                    <div class="libros-home libros-grid-tienda">
+                        <div class="libro1-home">
                             <a href="#"><img src="/botones/like-active.png" alt="botón me gusta" class="me-gusta"></a>
-                            <div class="portada" id="portada-tienda">
+                            <div class="portada portada-tienda">
                                 <img src="./imagenes/portadas/libro3.jpg" alt="El nacimiento de la filosofía" class="portada-img portada-componente">
                             </div>
                             <div class="info-libro-tienda">
@@ -321,16 +345,16 @@
                             </div>
                             <div class="precio-carrito">
                                 <span>8,95€</span>
-                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito" id="carrito"></a>
+                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito"></a>
                             </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="libros-home"  id="libros-grid-tienda">
-                        <div class="libro1-home" id="tamaño-contenido">
+                    <div class="libros-home libros-grid-tienda">
+                        <div class="libro1-home">
                             <a href="#"><img src="/botones/like-active.png" alt="botón me gusta" class="me-gusta"></a>
-                            <div class="portada" id="portada-tienda">
+                            <div class="portada portada-tienda">
                                 <img src="./imagenes/portadas/libro4.jpg" alt="El nacimiento de la filosofía" class="portada-img portada-componente">
                             </div>
                             <div class="info-libro-tienda">
@@ -352,15 +376,15 @@
                             </div>
                             <div class="precio-carrito">
                                 <span>8,95€</span>
-                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito" id="carrito"></a>
+                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito"></a>
                             </div>
                             </div>
                         </div>
                     </div>
-                    <div class="libros-home"  id="libros-grid-tienda">
-                        <div class="libro1-home" id="tamaño-contenido">
+                    <div class="libros-home libros-grid-tienda">
+                        <div class="libro1-home">
                             <a href="#"><img src="/botones/like-active.png" alt="botón me gusta" class="me-gusta"></a>
-                            <div class="portada" id="portada-tienda">
+                            <div class="portada portada-tienda">
                                 <img src="./imagenes/portadas/libro1.jpg" alt="El nacimiento de la filosofía" class="portada-img portada-componente">
                             </div>
                             <div class="info-libro-tienda">
@@ -382,17 +406,17 @@
                             </div>
                             <div class="precio-carrito">
                                 <span>8,95€</span>
-                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito" id="carrito"></a>
+                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito"></a>
                             </div>
                             </div>
                         </div>
                     </div>
 
                     
-                    <div class="libros-home"  id="libros-grid-tienda">
-                        <div class="libro1-home" id="tamaño-contenido">
+                    <div class="libros-home libros-grid-tienda">
+                        <div class="libro1-home">
                             <a href="#"><img src="/botones/like-active.png" alt="botón me gusta" class="me-gusta"></a>
-                            <div class="portada" id="portada-tienda">
+                            <div class="portada portada-tienda">
                                 <img src="./imagenes/portadas/libro2.jpg" alt="El nacimiento de la filosofía" class="portada-img portada-componente">
                             </div>
                             <div class="info-libro-tienda">
@@ -414,16 +438,16 @@
                             </div>
                             <div class="precio-carrito">
                                 <span>8,95€</span>
-                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito" id="carrito"></a>
+                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito"></a>
                             </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="libros-home"  id="libros-grid-tienda">
-                        <div class="libro1-home" id="tamaño-contenido">
+                    <div class="libros-home libros-grid-tienda">
+                        <div class="libro1-home">
                             <a href="#"><img src="/botones/like-active.png" alt="botón me gusta" class="me-gusta"></a>
-                            <div class="portada" id="portada-tienda">
+                            <div class="portada portada-tienda">
                                 <img src="./imagenes/portadas/libro3.jpg" alt="El nacimiento de la filosofía" class="portada-img portada-componente">
                             </div>
                             <div class="info-libro-tienda">
@@ -445,16 +469,16 @@
                             </div>
                             <div class="precio-carrito">
                                 <span>8,95€</span>
-                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito" id="carrito"></a>
+                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito"></a>
                             </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="libros-home"  id="libros-grid-tienda">
-                        <div class="libro1-home" id="tamaño-contenido">
+                    <div class="libros-home libros-grid-tienda">
+                        <div class="libro1-home">
                             <a href="#"><img src="/botones/like-active.png" alt="botón me gusta" class="me-gusta"></a>
-                            <div class="portada" id="portada-tienda">
+                            <div class="portada portada-tienda">
                                 <img src="./imagenes/portadas/libro4.jpg" alt="El nacimiento de la filosofía" class="portada-img portada-componente">
                             </div>
                             <div class="info-libro-tienda">
@@ -476,15 +500,15 @@
                             </div>
                             <div class="precio-carrito">
                                 <span>8,95€</span>
-                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito" id="carrito"></a>
+                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito"></a>
                             </div>
                             </div>
                         </div>
                     </div>
-                    <div class="libros-home"  id="libros-grid-tienda">
-                        <div class="libro1-home" id="tamaño-contenido">
+                    <div class="libros-home libros-grid-tienda">
+                        <div class="libro1-home">
                             <a href="#"><img src="/botones/like-active.png" alt="botón me gusta" class="me-gusta"></a>
-                            <div class="portada" id="portada-tienda">
+                            <div class="portada portada-tienda">
                                 <img src="./imagenes/portadas/libro1.jpg" alt="El nacimiento de la filosofía" class="portada-img portada-componente">
                             </div>
                             <div class="info-libro-tienda">
@@ -506,17 +530,17 @@
                             </div>
                             <div class="precio-carrito">
                                 <span>8,95€</span>
-                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito" id="carrito"></a>
+                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito"></a>
                             </div>
                             </div>
                         </div>
                     </div>
 
                     
-                    <div class="libros-home"  id="libros-grid-tienda">
-                        <div class="libro1-home" id="tamaño-contenido">
+                    <div class="libros-home libros-grid-tienda">
+                        <div class="libro1-home">
                             <a href="#"><img src="/botones/like-active.png" alt="botón me gusta" class="me-gusta"></a>
-                            <div class="portada" id="portada-tienda">
+                            <div class="portada portada-tienda">
                                 <img src="./imagenes/portadas/libro2.jpg" alt="El nacimiento de la filosofía" class="portada-img portada-componente">
                             </div>
                             <div class="info-libro-tienda">
@@ -538,16 +562,16 @@
                             </div>
                             <div class="precio-carrito">
                                 <span>8,95€</span>
-                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito" id="carrito"></a>
+                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito"></a>
                             </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="libros-home"  id="libros-grid-tienda">
-                        <div class="libro1-home" id="tamaño-contenido">
+                    <div class="libros-home libros-grid-tienda">
+                        <div class="libro1-home">
                             <a href="#"><img src="/botones/like-active.png" alt="botón me gusta" class="me-gusta"></a>
-                            <div class="portada" id="portada-tienda">
+                            <div class="portada portada-tienda">
                                 <img src="./imagenes/portadas/libro3.jpg" alt="El nacimiento de la filosofía" class="portada-img portada-componente">
                             </div>
                             <div class="info-libro-tienda">
@@ -569,16 +593,16 @@
                             </div>
                             <div class="precio-carrito">
                                 <span>8,95€</span>
-                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito" id="carrito"></a>
+                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito"></a>
                             </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="libros-home"  id="libros-grid-tienda">
-                        <div class="libro1-home" id="tamaño-contenido">
+                    <div class="libros-home libros-grid-tienda">
+                        <div class="libro1-home">
                             <a href="#"><img src="/botones/like-active.png" alt="botón me gusta" class="me-gusta"></a>
-                            <div class="portada" id="portada-tienda">
+                            <div class="portada portada-tienda">
                                 <img src="./imagenes/portadas/libro4.jpg" alt="El nacimiento de la filosofía" class="portada-img portada-componente">
                             </div>
                             <div class="info-libro-tienda">
@@ -600,15 +624,15 @@
                             </div>
                             <div class="precio-carrito">
                                 <span>8,95€</span>
-                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito" id="carrito"></a>
+                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito"></a>
                             </div>
                             </div>
                         </div>
                     </div>
-                    <div class="libros-home"  id="libros-grid-tienda">
-                        <div class="libro1-home" id="tamaño-contenido">
+                    <div class="libros-home libros-grid-tienda">
+                        <div class="libro1-home">
                             <a href="#"><img src="/botones/like-active.png" alt="botón me gusta" class="me-gusta"></a>
-                            <div class="portada" id="portada-tienda">
+                            <div class="portada portada-tienda">
                                 <img src="./imagenes/portadas/libro1.jpg" alt="El nacimiento de la filosofía" class="portada-img portada-componente">
                             </div>
                             <div class="info-libro-tienda">
@@ -630,17 +654,17 @@
                             </div>
                             <div class="precio-carrito">
                                 <span>8,95€</span>
-                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito" id="carrito"></a>
+                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito"></a>
                             </div>
                             </div>
                         </div>
                     </div>
 
                     
-                    <div class="libros-home"  id="libros-grid-tienda">
-                        <div class="libro1-home" id="tamaño-contenido">
+                    <div class="libros-home libros-grid-tienda">
+                        <div class="libro1-home">
                             <a href="#"><img src="/botones/like-active.png" alt="botón me gusta" class="me-gusta"></a>
-                            <div class="portada" id="portada-tienda">
+                            <div class="portada portada-tienda">
                                 <img src="./imagenes/portadas/libro2.jpg" alt="El nacimiento de la filosofía" class="portada-img portada-componente">
                             </div>
                             <div class="info-libro-tienda">
@@ -662,16 +686,16 @@
                             </div>
                             <div class="precio-carrito">
                                 <span>8,95€</span>
-                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito" id="carrito"></a>
+                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito"></a>
                             </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="libros-home"  id="libros-grid-tienda">
-                        <div class="libro1-home" id="tamaño-contenido">
+                    <div class="libros-home libros-grid-tienda">
+                        <div class="libro1-home">
                             <a href="#"><img src="/botones/like-active.png" alt="botón me gusta" class="me-gusta"></a>
-                            <div class="portada" id="portada-tienda">
+                            <div class="portada portada-tienda">
                                 <img src="./imagenes/portadas/libro3.jpg" alt="El nacimiento de la filosofía" class="portada-img portada-componente">
                             </div>
                             <div class="info-libro-tienda">
@@ -693,16 +717,16 @@
                             </div>
                             <div class="precio-carrito">
                                 <span>8,95€</span>
-                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito" id="carrito"></a>
+                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito"></a>
                             </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="libros-home"  id="libros-grid-tienda">
-                        <div class="libro1-home" id="tamaño-contenido">
+                    <div class="libros-home libros-grid-tienda">
+                        <div class="libro1-home">
                             <a href="#"><img src="/botones/like-active.png" alt="botón me gusta" class="me-gusta"></a>
-                            <div class="portada" id="portada-tienda">
+                            <div class="portada portada-tienda">
                                 <img src="./imagenes/portadas/libro4.jpg" alt="El nacimiento de la filosofía" class="portada-img portada-componente">
                             </div>
                             <div class="info-libro-tienda">
@@ -724,14 +748,14 @@
                             </div>
                             <div class="precio-carrito">
                                 <span>8,95€</span>
-                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito" id="carrito"></a>
+                                <a href="#"><img src="./botones/carrito-active.png" alt="boton carrito"></a>
                             </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-
+                <!-- PAGINACIÓN -->
                 <div class="paginas">
                     <nav class="paginacion-tienda">
                             <a href="#"><img src="./botones/siguiente.png" alt=""  class="boton-rotado-paginacion"></a>
@@ -747,17 +771,13 @@
                             <a href="#"><img src="./botones/siguiente.png" alt=""></a>
                         </nav>
                 </div>
-
-
-
-            </div>
-                    
+            </div>                    
             </div>
             
-        </div>
+        
     </section>
 
-
+    <!-- AUTORES CON TAGS -->
     <section>
         <div class="titulo-intro-filo-home">
             <img src="./logo/LOGOTIPO_VR10.png" alt="logo FiloNow" class="imagen-titulo">

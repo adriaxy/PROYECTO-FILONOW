@@ -1,11 +1,4 @@
-/* descripcion nosotros - NOSOTROS*/
-.nosotros-maxw{
-    max-width: 1300px;
-  }
-  .contenido-centrado-nosotros{
-    display: flex;
-    justify-content: center;
-  }
+  /* descripcion nosotros - NOSOTROS */
 
   .escoge-fn-nosotros{
     margin: 50px 0px 50px;
@@ -38,6 +31,8 @@
     height: 80px;
     background-color: #FFE822;
   }
+
+  /* BOTONES ESCOGE FILONOW */
 
   .botones-escoge-nosotros{
     display: flex;
@@ -85,20 +80,20 @@
   }
 
   .imagen1{
-    background-image: url(./imagenes/nosotros/descuentos.jpg);
+    background-image: url(../imagenes/nosotros/descuentos.jpg);
     background-size: cover;
   }
   
   .imagen2{
-    background-image: url(./imagenes/nosotros/comprar.jpg);
+    background-image: url(../imagenes/nosotros/comprar.jpg);
     background-size: cover;
   }
   .imagen3{
-    background-image: url(./imagenes/nosotros/comunidad.jpg);
+    background-image: url(../imagenes/nosotros/comunidad.jpg);
     background-size: cover;
   }
   .imagen4{
-    background-image: url(./imagenes/nosotros/devolucion.jpg);
+    background-image: url(../imagenes/nosotros/devolucion.jpg);
     background-size: cover;
   }
 
@@ -148,5 +143,4 @@
     .descripcion-nosotros p{
         text-align: left;
     }
-
    }

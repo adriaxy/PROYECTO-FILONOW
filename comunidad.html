@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comunidad - FiloNow</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="componentes.css">
-    <link rel="stylesheet" href="comunidad.css">
+    <title>FiloNow - Comunidad</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/comunidad.css">
+    <link rel="stylesheet" href="./CSS/componentes.css">
 </head>
+
 <body>
     <header>
         <div class="navBar">
             <div class="sup-menu">
-              <a class="abrir-menu" id="abrir">&#8801</a>
+              <a class="abrir-menu" id="abrir">&#8801;</a>
                 <a href="index.html"><img src="./logo/LOGOTIPO_VR1.png" alt="FiloNow"  class="logo"></a> 
                 <div class="call-action">
                     <div class="mi-cuenta-boton boton-cta">
-                      <a href="#"><img src="./botones/mi-cuenta-active.png" alt="Botón Cuenta" class="icono-cuenta">
+                      <a href="#"><img src="./botones/mi-cuenta-active.png" alt="Botón Cuenta" class="icono-cuenta"></a>
                           <a href="#">
                               <h2 class="mi-cuenta">Mi <br>Cuenta</h2>
-                          </a></a>                        
+                          </a>                        
                     </div>
                     <div class="carrito boton-cta">
                         <a href="#"><img src="./botones/carrito-active.png" alt="Botón carrito" class="icono-carrito"></a>
@@ -28,14 +31,14 @@
             </div>
           <div class="buscador" id="buscador-resp">
                 <form role="search" onsubmit="return false;">
-                    <input type="search" id="search-input" name="q" placeholder="Busca por autor, título, género, ISBN ..." aria-label="Buscador">
+                    <input type="search" id="search-input2" name="q" placeholder="Busca por autor, título, género, ISBN ..." aria-label="Buscador">
                     <button type="submit" class="boton-buscador">
-                        <img src="./botones/buscador.png" alt="botón buscador" width="28px">
+                        <img src="./botones/buscador.png" alt="botón buscador" width="28">
                     </button>
                 </form>
             </div> 
             <nav class="menu" id="menu">
-              <a class="cerrar-menu" id="cerrar">&#215</a>
+              <a class="cerrar-menu" id="cerrar">&#215;</a>
                 <a href="nosotros.html">NOSOTROS</a>
                 <div class="linea-vertical"></div>
                 <a href="./tienda.html">TIENDA</a>
@@ -45,9 +48,9 @@
                 <a href="#">FILO<span class="menu-light-font">QUIZZ</span></a>
                 <div class="buscador">
                     <form role="search" onsubmit="return false;">
-                        <input type="search" id="search-input" name="q" placeholder="Busca por autor, título, género, ISBN ..." aria-label="Buscador">
+                        <input type="search" id="search-input1" name="q" placeholder="Busca por autor, título, género, ISBN ..." aria-label="Buscador">
                         <button type="submit" class="boton-buscador">
-                            <img src="./botones/buscador.png" alt="botón buscador" width="40px">
+                            <img src="./botones/buscador.png" alt="botón buscador" width="40">
                         </button>
                     </form>
                 </div>
@@ -55,16 +58,17 @@
             <div class="b-avanzada">
                 <a href="#">Búsqueda avanzada</a>
             </div>
-
+<!-- BREADCRUMBS -->
             <div class="breadcrumbs">
                 <ul>
-                    <a href="index.html"><li>Home</li></a>
-                    <a href="comunidad.html"><li>Comunidad</li></a>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="comunidad.html">Comunidad</a></li>
                 </ul>
             </div>
         </div>       
     </header>
 
+    <!-- EVENTOS FILONOW -->
     <section class="comunidad-eventos-fn">
         <div class="titulo-intro-filo-home">
             <img src="./logo/LOGOTIPO_VR5.png" alt="logo FiloNow" class="imagen-titulo-descubre">
@@ -73,6 +77,7 @@
             </div>
         </div>
 
+        <!-- APARTADO PARA LOS BOTONES RELACIONADOS CON LA VISUALIZACIÓN DE EVENTOS EN EL CALENDARIO -->
         <div class="centrar-contenido-eventos-sup">
             <div class="contenido-parte-sup-comunidad">
                 <div class="h2-espacio-comunidad">
@@ -124,6 +129,7 @@
         </div>       
         </section>
 
+        <!-- CALENDARIO -->
         <section class="seccion-calendario">
             
             <div class="menu-calendario">             
@@ -252,7 +258,7 @@
                         
                         
                         
-                            <!-- FILA 2-->
+ <!-- FILA 2-->
                             <div class="plantilla-dia">
                                 <div class="contenedor-dia">
                                     <div class="franja-horaria1">
@@ -368,11 +374,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        
-                        
-                        
-                            <!-- FILA 3-->
+                            </div>                       
+<!-- FILA 3-->
                             <div class="plantilla-dia">
                                 <div class="contenedor-dia">
                                     <div class="franja-horaria1">
@@ -491,10 +494,6 @@
                             </div>
                         </div>
                     </div>
-
-
-                
-
                 <div class="contenedor-boton-vermas"><a href="#" class="ver-mas-estandar" id="boton-calendario"><img src="./botones/vermas.png" alt="boton para ver más sobre el evento"></a></div>
             </div>
         </section>
@@ -540,5 +539,8 @@
                 </div>
             </section>
          </footer>
+
+         <script src="./js/main.js"></script>
+
 </body>
 </html>

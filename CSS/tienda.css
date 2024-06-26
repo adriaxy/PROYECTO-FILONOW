@@ -26,7 +26,7 @@
     grid-template-rows: repeat(4, 1fr);
     gap: 3px;
    }
- 
+
  
    .visualizacion1:hover, .visualizacion2:hover{
     opacity: .8;
@@ -117,16 +117,17 @@
    }
  
  
+   .grid .portada-tienda,
    .portada-tienda{
     width: 100%;
    }
- 
  
    .centrar-info-novedades{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 30px;
    }
  
  
@@ -143,28 +144,37 @@
    .info-comunidad-novedades ul a{
     text-decoration: none;
    }
+
+   .info-comunidad-novedades ul li{
+    list-style-type: none;
+    margin: 20px 0px;
+   }
  
  
-   .info-comunidad-novedades ul a li{
+   .info-comunidad-novedades ul li a{
     font-size: 20px;
     font-weight: 500;
     color: #000;
     text-align: center;
     list-style-type: none;
-    padding: 10px;
-    margin-top: 10px;
    }
  
  
    .info-comunidad-novedades ul li{
     background-color: #FFE822;
     transition: 0.4s;
+    text-align: center;
+    padding: 5px 15px;
    }
  
  
    .info-comunidad-novedades ul li:hover{
     background-color: #fff;
     color: #7A398C;
+   }
+
+   .posicion-grid-novedades .ver-mas-estandar{
+    margin-bottom: 50px;
    }
  
  
@@ -175,36 +185,6 @@
  
     .posicion-grid-novedades .ver-mas-estandar{
     border-bottom: #FFE822 10px solid;
-    }
- 
- 
-    /*GRID NOVEDADES RESPONSIVE*/
-    @media(max-width:1200px){
- 
- 
-        .info-comunidad-novedades,
-        .opciones-visualizacion,
-        .posicion-grid-novedades .ver-mas-estandar{
-            display: none;
-        }
- 
- 
-        .posicion-grid-novedades{
-            justify-content: flex-end;
-        }
- 
- 
-        .portada-comun{
-            width: 270px;
-        }
- 
- 
-        .grid-novedades{
-            display: flex;
-            align-items: center;
-            overflow: auto;
-            margin: 40px 0px 30px 20px;
-        }
     }
  
  
@@ -235,64 +215,6 @@
         align-items: center;
         gap: 20px;
     }
- 
-/*PAGINACIÓN*/
-
-    .paginacion-tienda ul{
-     list-style-type: none;
-    }
- 
-    .paginacion-tienda ul li{
-     display: inline;
-     margin: 0px 20px;
-    }
- 
-    .paginacion-tienda {
-     align-items: center;
-     display: flex;
-    }
- 
-    .paginacion-tienda{
-     justify-content: center;
-     gap: 30px;
-     margin-top: 40px;
-    }
-    .boton-rotado-paginacion{
-        transform: rotate(-180deg);
-    }
- 
-    .paginacion-tienda a img{
-        width: 80px;
-    }
-
-    .paginacion-tienda ul a{
-        display: inline-block;
-        text-decoration: none;
-        font-weight: 700;
-        font-size: 25px;
-        background-color: #f9deff;
-        width: 40px;
-        height: 40px;
-        text-align: center;
-    }
-
-    .paginacion-tienda ul a:hover{
-        background-color: #fff6a7;
-    }
-
-
-/*componente libro tienda*/
-
-    #libros-grid-tienda,
-    #portada-tienda{
-        width: 100%;
-        height: 100%;
-        margin-top: 0;
-    }
-
-    #carrito{
-        width: 50px;
-    }
 
 
 /* GRID TIENDA */
@@ -300,6 +222,25 @@
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+/*componente libro tienda*/
+
+
+.grid .portada-tienda{
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+}
+
+.grid .libros-grid-tienda{
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+}
+
+#carrito{
+    width: 50px;
 }
 
 /* botones */
@@ -351,7 +292,7 @@
      padding-left: 50px;
     }
  
-    .opciones-tienda h1, .sup-tienda h1{
+    .opciones-tienda h3, .sup-tienda h1{
      font-size: 30px;
     }
 
@@ -361,7 +302,7 @@
         padding: 20px 100px;
     }
  
-    .opciones-tienda h1{
+    .opciones-tienda h3{
      border-bottom: #7A398C 6px solid;
      margin-bottom: 20px;
     }
@@ -373,22 +314,21 @@
     .opciones-tienda a{
      text-decoration: none;
     }
- 
-    .categorias-tienda ul a,
+
+    .categorias-tienda ul li a,
     .filtros-tienda div a{
      display: block;
      margin: 10px 0px;
      font-size: 16px;
      border-bottom: #FFE822 1px solid;
-
     }
 
-    .categorias-tienda ul a{
+    .categorias-tienda ul li a{
      margin: 20px 0px;
     }
  
-    .categorias-tienda ul a:hover, 
-    .categorias-tienda a:hover,
+    .categorias-tienda ul li a:hover, 
+    .categorias-tienda li a:hover,
     .filtros-tienda div:hover{
      border-bottom: 1px #7A398C solid;
      cursor: pointer;
@@ -402,6 +342,50 @@
     .seleccionado img{
         transform: rotate(-90deg);
     }
+
+    /*PAGINACIÓN*/
+
+    .paginacion-tienda ul{
+        list-style-type: none;
+       }
+    
+       .paginacion-tienda ul li{
+        display: inline;
+        margin: 0px 20px;
+       }
+    
+       .paginacion-tienda {
+        align-items: center;
+        display: flex;
+       }
+    
+       .paginacion-tienda{
+        justify-content: center;
+        gap: 30px;
+        margin-top: 40px;
+       }
+       .boton-rotado-paginacion{
+           transform: rotate(-180deg);
+       }
+    
+       .paginacion-tienda a img{
+           width: 80px;
+       }
+   
+       .paginacion-tienda ul a{
+           display: inline-block;
+           text-decoration: none;
+           font-weight: 700;
+           font-size: 25px;
+           background-color: #f9deff;
+           width: 40px;
+           height: 40px;
+           text-align: center;
+       }
+   
+       .paginacion-tienda ul a:hover{
+           background-color: #fff6a7;
+       }
 
     /*tags autores*/
 
@@ -436,10 +420,38 @@
  }
 
   
- #libros-grid-tienda {
+ .grid .libros-grid-tienda{
     width: 200px;
     margin-top: 0;
 }
+
  }
+
+ /*GRID NOVEDADES RESPONSIVE*/
+ @media(max-width:1200px){
+    .info-comunidad-novedades,
+    .opciones-visualizacion,
+    .posicion-grid-novedades .ver-mas-estandar{
+        display: none;
+    }
+
+
+    .posicion-grid-novedades{
+        justify-content: flex-end;
+    }
+
+
+    .portada-comun{
+        width: 270px;
+    }
+
+
+    .grid-novedades{
+        display: flex;
+        align-items: center;
+        overflow: auto;
+        margin: 40px 0px 30px 20px;
+    }
+}
  
  
