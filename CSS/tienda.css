@@ -117,10 +117,10 @@
    }
  
  
+   .grid .portada-tienda,
    .portada-tienda{
     width: 100%;
    }
- 
  
    .centrar-info-novedades{
     display: flex;
@@ -226,8 +226,14 @@
 
 /*componente libro tienda*/
 
-#libros-grid-tienda,
-#portada-tienda{
+
+.grid .portada-tienda{
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+}
+
+.grid .libros-grid-tienda{
     width: 100%;
     height: 100%;
     margin-top: 0;
@@ -414,10 +420,11 @@
  }
 
   
- #libros-grid-tienda {
+ .grid .libros-grid-tienda{
     width: 200px;
     margin-top: 0;
 }
+
  }
 
  /*GRID NOVEDADES RESPONSIVE*/
