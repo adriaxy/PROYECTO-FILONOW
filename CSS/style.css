@@ -32,7 +32,7 @@
  
  
  header {
-  background-image: url(./imagenes/background/3.png);
+  background-image: url(../imagenes/background/3.png);
   height: 100%;
   padding: 0 50px 60px;
   color: black;
@@ -258,7 +258,7 @@
 
  .intro-filo-home{
   height: 100%;
-  background-image: url(./imagenes/background/2.png);
+  background-image: url(../imagenes/background/2.png);
   background-size: cover;
  }
  
@@ -450,7 +450,7 @@
 
  /* NOVEDADES -HOME */
  #novedades-fondo{
-  background-image: url(./imagenes/background/3.png);
+  background-image: url(../imagenes/background/3.png);
  }
 
  /* DESCUBRE SECCIONES - HOME */
@@ -517,7 +517,7 @@
 
 /* SELECCIONADOS PARA TI - HOME */
 .parati-home{
-  background-image: url(./imagenes/background/2.png);
+  background-image: url(../imagenes/background/2.png);
   background-size: cover;
   height: 970px;
 }
@@ -750,7 +750,7 @@
  /* NOSOTROS - HOME */
  .video-nosotros{
   height: 700px;
-  background-image: url(./imagenes/nosotros/video.jpg);
+  background-image: url(../imagenes/nosotros/video.jpg);
   background-size: cover;
   position: relative;
   margin: 0 auto;
@@ -764,7 +764,7 @@
 
  .contenido-sobre-nosotros{
   background-color: rgba(122, 57, 140, 0.2);  
-  background-image: url(./imagenes/background/1.png);
+  background-image: url(../imagenes/background/1.png);
   background-size: cover;
   margin-top: -50px;
   padding-top: 50px;
@@ -951,7 +951,7 @@
 
  .sup-menu{
   position: relative;
-  background-image: url(./imagenes/background/1.png);
+  background-image: url(../imagenes/background/1.png);
   background-size: cover;
   border-bottom: #9d9d9d 0.5px solid;
   justify-content: space-between;

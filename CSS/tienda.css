@@ -166,6 +166,10 @@
     background-color: #fff;
     color: #7A398C;
    }
+
+   .posicion-grid-novedades .ver-mas-estandar{
+    margin-bottom: 50px;
+   }
  
  
    .info-comunidad-novedades .ver-mas-estandar:hover{

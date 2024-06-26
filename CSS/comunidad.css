@@ -135,7 +135,7 @@
 
 /* CALENDARIO */
 .calendario{
-    background-image: url(./imagenes/background/4.png);
+    background-image: url(../imagenes/background/4.png);
     background-size: cover;
     padding: 50px 90px;
 }
