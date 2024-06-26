@@ -1,11 +1,4 @@
-/* descripcion nosotros - NOSOTROS*/
-.nosotros-maxw{
-    max-width: 1300px;
-  }
-  .contenido-centrado-nosotros{
-    display: flex;
-    justify-content: center;
-  }
+  /* descripcion nosotros - NOSOTROS */
 
   .escoge-fn-nosotros{
     margin: 50px 0px 50px;
@@ -38,6 +31,8 @@
     height: 80px;
     background-color: #FFE822;
   }
+
+  /* BOTONES ESCOGE FILONOW */
 
   .botones-escoge-nosotros{
     display: flex;
@@ -148,5 +143,4 @@
     .descripcion-nosotros p{
         text-align: left;
     }
-
    }
