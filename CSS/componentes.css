@@ -267,6 +267,81 @@ body{
     gap: 15px;
    }
 
+/* FOOTER */
+.grid-botones-foot{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0px 200px 50px;
+  flex-wrap: wrap;
+  border-top: #7A398C 10px solid;
+  border-bottom: #FFE822 10px solid;
+}
+
+.botones-general span{
+  font-weight: 100;
+}
+
+.contenido-info-foot{
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 80px;
+  background-color: #fffddb;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.info-dire-foot{
+  display: flex;
+  gap: 50px;
+}
+
+.info1, .info2{
+  min-width: 310px;
+}
+
+.info-lista-foot{
+  list-style-type: none;
+}
+
+.info-lista-foot li a{
+  text-decoration: none;
+}
+
+.info-lista-foot li, .info2 p{
+  padding: 5px 0px;
+  margin-top: 5px;
+}
+
+.info-lista-foot li a:HOVER{
+  text-decoration: none;
+  border-bottom: #000 1px solid;
+}
+
+.logo-foot-img{
+  width: 500px;
+}
+
+.rrss-foot{
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 30px;
+}
+
+.rrss-foot img{
+  width: 70px;
+}
+
+.rrss-foot a:hover{
+  background-color: #fff6a5;
+  transition: 0.4s;
+}
+
+.info-foot h4{
+  font-size: 28px;
+  font-weight: 500;
+}
+
 /*RESPONSIVE COMPONENTES*/
 
 @media(max-width: 978px){
@@ -386,7 +461,68 @@ body{
     .b-avanzada{
       display: none;
     }
-    
+
+    /* FOOTER - HOME */
+  .grid-botones-foot{
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .grid-botones-foot a{
+    font-size: 16px;
+  }
+
+  .contenido-info-foot{
+    flex-direction: column;
+    width: 100%;
+    gap: 0px;
+    flex-wrap: nowrap;
+  }
+
+  .info-dire-foot{
+    gap: 0px;
+    justify-content: center;
+  }
+
+  .logo-foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: -1;
+    width: 300px;
+    align-self: center;
+  }
+
+  .logo-foot-img{
+    width: 250px;
+  }
+
+  .rrss-foot img{
+    width: 50px;
+  }
+
+  .rrss-foot{
+    gap: 25px;
+    padding: 40px 0;
+    width: 300px;
+  }
+
+  .info-lista-foot li, .info2 p{
+    padding: 0px;
+    margin-top: 5px;
+    font-size: 11px;
+  }
+
+  .info-dire-foot h4{
+font-size: 14px;
+  }
+
+  .info1, .info2{
+    min-width: 150px;
+  }
+
 /*bredcrumbs*/
 .breadcrumbs{
     font-size: 12px;
