@@ -46,11 +46,6 @@
   border-bottom: #FFE822 10px solid;
  }
  
- 
- .ver-mas-resp{
-  opacity: 0;
- }
- 
  .titulo-text img:hover {
   border-bottom: #7A398C 10px solid;
   transition: 0.4s;
@@ -64,9 +59,8 @@
  }
  
  .contenedor-intro-libros-home{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: auto;
+  padding: 20px 0px 20px 20px;
  }
 
  .contenedor-novedades-home{
@@ -615,17 +609,13 @@
  @media(max-width: 978px){
  
  /* INTRODUCCIÓN A LA FILOSOFÍA - HOME */
-  .intro-filo-home{
-    height: 630px;
-  }
- 
   .boton-siguiente, .visualizacion{
     display: none;
   }
  
   .intro-libros-home{
     background-size: cover;
-    padding-bottom: 80px;
+    padding: 0PX;
   }
  
   .intro-libros-home{
@@ -634,6 +624,23 @@
     overflow: auto;
     white-space: nowrap;
   }
+
+  .contenedor-vermas-resp{
+    margin-top: 20px;
+  }
+
+  .contenedor-vermas-resp a img{
+    width: 100px;
+  }
+
+  .contenedor-vermas-resp {
+    display: flex;
+    justify-content: center;
+  }
+
+  .libros-home{   
+    width: 100%;
+   }
  
   .titulo-text{
     display: block;
