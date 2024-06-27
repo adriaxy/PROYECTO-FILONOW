@@ -65,6 +65,8 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin: 0px 50px;
+    border-bottom: #7A398C 1px solid;
    }
  
    .grid-novedades{
@@ -173,11 +175,24 @@
     color: #7A398C;
    }
 
-   .posicion-grid-novedades .ver-mas-estandar{
+   .linea-vermas-tienda-novedades{
     margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
    }
- 
- 
+   
+   .linea-vermas-tienda-novedades a{
+    border-bottom: #7A398C 10px solid;
+    transition: 0.4s;
+   }
+
+   .linea-vermas-tienda-novedades a:hover{
+    border-bottom: #FFE822 10px solid;
+   }
+
+
    .info-comunidad-novedades .ver-mas-estandar:hover{
     border-bottom: #000 10px solid;
     }
@@ -185,6 +200,7 @@
  
     .posicion-grid-novedades .ver-mas-estandar{
     border-bottom: #FFE822 10px solid;
+    padding-top: 30px;
     }
  
  
@@ -423,21 +439,62 @@
  .grid .libros-grid-tienda{
     width: 200px;
     margin-top: 0;
-}
+ }
 
+    #grid-tienda .libros-grid-tienda{
+        width: 100%;
+    }
+
+    /* paginacion*/
+
+    .paginacion-tienda{
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .paginacion-tienda ul a{
+        font-size: 13px;
+        display: inline-block;
+    }
+
+    .paginacion-tienda{
+        gap: 10px;
+    }
+
+    .paginacion-tienda ul li{
+        margin: 0;
+    }
+
+    .paginacion-tienda a img{
+        width: 40px;
+    }
+
+    .paginacion-tienda ul li a{
+        margin: 0px 10px;
+        width: 20px;
+        height: 20px;
+    }
  }
 
  /*GRID NOVEDADES RESPONSIVE*/
  @media(max-width:1200px){
     .info-comunidad-novedades,
     .opciones-visualizacion,
-    .posicion-grid-novedades .ver-mas-estandar{
+    .posicion-grid-novedades .ver-mas-estandar,
+    .linea-vermas-tienda-novedades{
         display: none;
     }
 
+    .grid{
+        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+        justify-content: center;
+    }
 
     .posicion-grid-novedades{
         justify-content: flex-end;
+        overflow: auto;
+        margin: 20px 0px 0px 20px;
     }
 
 
@@ -445,13 +502,16 @@
         width: 270px;
     }
 
+    .novedades-tienda{
+        margin-bottom: 20px;
+    }
 
     .grid-novedades{
         display: flex;
         align-items: center;
-        overflow: auto;
-        margin: 40px 0px 30px 20px;
+        margin: 30px 0px 0px;
     }
 }
- 
+
+
  

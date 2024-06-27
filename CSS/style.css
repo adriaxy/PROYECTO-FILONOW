@@ -3,9 +3,7 @@
   margin: 0;
   box-sizing: border-box;
  }
- 
- 
- 
+
  /* INTRODUCCIÓN A LA FILOSOFÍA - HOME */
 
  /* TITULO SECCIÓN*/
@@ -46,11 +44,6 @@
   border-bottom: #FFE822 10px solid;
  }
  
- 
- .ver-mas-resp{
-  opacity: 0;
- }
- 
  .titulo-text img:hover {
   border-bottom: #7A398C 10px solid;
   transition: 0.4s;
@@ -64,9 +57,8 @@
  }
  
  .contenedor-intro-libros-home{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: auto;
+  padding: 20px 0px 20px 20px;
  }
 
  .contenedor-novedades-home{
@@ -78,15 +70,13 @@
  .intro-libros-home{
   display: flex;
   padding: 0px 50px 50px;
-  /*flex-wrap: wrap;*/
+  justify-content: center;
  }
  
  
  .libros-home{
   background-color: #fff;
   display: flex;
-
-  margin: auto;
   margin-top: 50px;
   height: 80%;
   width: 310px;
@@ -615,25 +605,39 @@
  @media(max-width: 978px){
  
  /* INTRODUCCIÓN A LA FILOSOFÍA - HOME */
-  .intro-filo-home{
-    height: 630px;
-  }
- 
   .boton-siguiente, .visualizacion{
     display: none;
   }
  
   .intro-libros-home{
     background-size: cover;
-    padding-bottom: 80px;
+    padding: 0PX;
   }
  
   .intro-libros-home{
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: flex-start;
     overflow: auto;
     white-space: nowrap;
   }
+
+  .contenedor-vermas-resp{
+    margin-top: 20px;
+  }
+
+  .contenedor-vermas-resp a img{
+    width: 100px;
+  }
+
+  .contenedor-vermas-resp {
+    display: flex;
+    justify-content: center;
+  }
+
+  .libros-home{   
+    width: 100%;
+   }
  
   .titulo-text{
     display: block;
@@ -715,11 +719,6 @@
     display: none;
   }
  
- 
-  .descubre-home{
-    margin-top: 22px;
-  }
- 
   .descubre-home{
     height: 680px;
    }
@@ -729,6 +728,7 @@
     flex-direction: column;
     gap: 0px;
     flex-wrap: nowrap;
+    padding: 0;
   }
  
  
@@ -762,7 +762,7 @@
  }
 
  .contenido-parati{
-  padding: 50px 50px;
+  padding: 50px 40px;
  }
 
  .portada-parati1{
@@ -771,6 +771,7 @@
 
  .libro-parati{
   flex-direction: column;
+  margin-right: 15px;
  }
 
  .parati-nombreautor{
