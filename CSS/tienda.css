@@ -65,6 +65,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin: 0px 50px;
    }
  
    .grid-novedades{
@@ -173,9 +174,15 @@
     color: #7A398C;
    }
 
-   .posicion-grid-novedades .ver-mas-estandar{
+   .linea-vermas-tienda-novedades{
     margin-bottom: 50px;
+    border-top: #7A398C 1px solid;
+    width: 100%;
+    display: flex;
+    justify-content: center;
    }
+
+
  
  
    .info-comunidad-novedades .ver-mas-estandar:hover{
@@ -185,6 +192,7 @@
  
     .posicion-grid-novedades .ver-mas-estandar{
     border-bottom: #FFE822 10px solid;
+    padding-top: 30px;
     }
  
  
