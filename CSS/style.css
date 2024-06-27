@@ -3,9 +3,7 @@
   margin: 0;
   box-sizing: border-box;
  }
- 
- 
- 
+
  /* INTRODUCCIÓN A LA FILOSOFÍA - HOME */
 
  /* TITULO SECCIÓN*/
@@ -72,15 +70,13 @@
  .intro-libros-home{
   display: flex;
   padding: 0px 50px 50px;
-  /*flex-wrap: wrap;*/
+  justify-content: center;
  }
  
  
  .libros-home{
   background-color: #fff;
   display: flex;
-
-  margin: auto;
   margin-top: 50px;
   height: 80%;
   width: 310px;
@@ -621,6 +617,7 @@
   .intro-libros-home{
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: flex-start;
     overflow: auto;
     white-space: nowrap;
   }
@@ -722,11 +719,6 @@
     display: none;
   }
  
- 
-  .descubre-home{
-    margin-top: 22px;
-  }
- 
   .descubre-home{
     height: 680px;
    }
@@ -736,6 +728,7 @@
     flex-direction: column;
     gap: 0px;
     flex-wrap: nowrap;
+    padding: 0;
   }
  
  
