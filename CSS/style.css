@@ -762,7 +762,7 @@
  }
 
  .contenido-parati{
-  padding: 50px 50px;
+  padding: 50px 40px;
  }
 
  .portada-parati1{
@@ -771,6 +771,7 @@
 
  .libro-parati{
   flex-direction: column;
+  margin-right: 15px;
  }
 
  .parati-nombreautor{

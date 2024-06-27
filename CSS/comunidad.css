@@ -1,8 +1,8 @@
 /*botones mostrar en el calendario*/
 
 .botones-mostrar-calendario{
-    width: 334px;
-    height: 223px;
+    width: 202.41px;
+    height: 135.15px;
 }
 
 .boton-calendario img{
@@ -29,7 +29,7 @@
 }
 
 .h2-boton-calendario h2{
-    padding: 5px 25px;
+    padding: 5px 10px;
     background-color: #FFE822;
     font-size: 20px;    
 }
@@ -57,12 +57,10 @@
     margin: 30px 90px 50px;
 }
 
-.h2-espacio-comunidad{
-    margin-bottom: 50px;
-}
-
 .h2-espacio-comunidad h2{
     font-size: 20px;
+    padding-bottom: 30px;
+
 }
 
 .contenido-parte-sup-comunidad{
@@ -132,10 +130,6 @@
 .contenedor-boton-vermas{
     display: flex;
     justify-content: center;
-}
-
-.contenedor-boton-vermas{
-    margin: 30px;
 }
 
 #boton-calendario{
@@ -291,14 +285,32 @@
         display: none;
     }
 
-
-    .botones-mostrar-calendario{
-        width: 202.41px;
-        height: 135.15px;
+    .seccion-calendario{
+        padding-bottom: 20px;
+        background-color: #7a398c1e;
     }
 
     .h2-boton-calendario h2{
         font-size: 14px;    
+    }
+
+    .botones-mostrar-calendario{
+        width: 155.7px;
+        height: 103.96px;
+    }
+
+    .centrar-contenido-eventos-sup{
+        margin: 20px 20px;
+    }
+
+    .seccion-mostrar-calendario{
+        justify-content: center;
+    }
+
+  
+    .calendario{
+        padding: 0px;
+        background-image: none;
     }
 }
 
